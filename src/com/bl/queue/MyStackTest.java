@@ -1,4 +1,4 @@
-package com.bl.stack;
+package com.bl.queue;
 
 import org.junit.Test;
 import com.bl.linkedList.INode;
