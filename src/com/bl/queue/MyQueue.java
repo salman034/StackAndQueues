@@ -15,11 +15,11 @@ public class MyQueue {
         myLinkedList.printMyNodes();
     }
 
-    public INode peak() {
-        return myLinkedList.head;
-    }
-
     public void enqueue(INode myNode) {
         myLinkedList.enqueue(myNode);
+    }
+
+    public INode dequeue() {
+        return myLinkedList.dequeue();
     }
 }

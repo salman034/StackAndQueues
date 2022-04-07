@@ -7,17 +7,16 @@ import junit.framework.Assert;
 
 public class MyQueueTest {
     @Test
-    public void given3NumberWhenEnqueueToQueueshouldHavaLastAddedNode() {
+    public void given3NumberWhenDequeueToQueueshouldHaveBeginningNode() {
         MyNode<Integer> myFirstNode = new MyNode<>(56);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(70);
-        MyQueue myQueue= new MyQueue();
+        MyQueue myQueue = new MyQueue();
         myQueue.enqueue(myFirstNode);
         myQueue.enqueue(mySecondNode);
         myQueue.enqueue(myThirdNode);
-        INode peak = myQueue.peak();
+        INode dequeue = myQueue.dequeue();
         myQueue.printQueue();
-        Assert.assertEquals(myFirstNode, peak);
-
+        Assert.assertEquals(myFirstNode, dequeue);
     }
 }
